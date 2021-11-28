@@ -1,8 +1,9 @@
 public class ThreadAssignment {
 
     static class Counter {
-        void count() {
-            //todo implement me
+       public static int counter = 0;
+      public static synchronized  void count() {
+            counter++;
         }
     }
 
